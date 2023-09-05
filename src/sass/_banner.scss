@@ -1,0 +1,66 @@
+@use './global';
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 22.5rem;
+    background-image: url('/src/assets/beer-banner.jpg');
+    background-size: cover;
+    display: flex;
+    &__div--info {
+        width: 18.75rem;
+        height: 17rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        box-shadow: 0 8px 4px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        &__h1 {
+            width: 16.1875rem;
+            height: 9.375rem;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            font-size: global.$font-xlarge;
+            font-family: global.$font;
+            font-weight: 600;
+            line-height: 3.125rem;
+            letter-spacing: -0.125rem;
+        }
+        &__p {
+            width: 10.625rem;
+            height: 2.625rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-size: global.$font-paragraph-large;
+            font-family: global.$font;
+            font-weight: 500;
+            line-height: 1.5rem;
+            letter-spacing: -0.0625rem;
+        }
+    }
+    &__button {
+        width: 14.375rem;
+        height: 3rem;
+        position: absolute;
+        bottom: -1.5rem;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        margin-right: 1rem;
+        border-radius: .9375rem;
+        border: none;
+        background-color: global.$second-color;
+        box-shadow: 2px 6px 4px rgb(255, 178, 40, 0.4);
+        &__p {
+            width: 8.5625rem;
+            font-size: global.$font-paragraph-large;
+            font-family: global.$font;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+    }
+}

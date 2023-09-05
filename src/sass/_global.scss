@@ -1,0 +1,23 @@
+$primary-color: #060501;
+$second-color: #FFB228;
+$font:'Poppins', sans-serif;
+$font-xlarge: 3rem;
+$font-large: 1.75rem;
+$font-medium: 1.5rem;
+$font-paragraph-large: 1rem;
+$font-paragraph-small: .875rem;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $font;
+}
+body::-webkit-scrollbar {
+    display: none;
+}

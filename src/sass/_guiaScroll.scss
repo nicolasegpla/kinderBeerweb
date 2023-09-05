@@ -1,0 +1,20 @@
+@use './global';
+
+.section--guia {
+    width: 3.25rem;
+    height: .75rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.section--guia div {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.section--guia div:nth-child(1) {
+    background-color: global.$second-color;
+}
