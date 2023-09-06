@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import iconWhatsapp from '../assets/whatsapp-kinder.svg'
 
 function Banner() {
     return (
@@ -10,7 +10,7 @@ function Banner() {
                 </div>
                 <button className='banner__button'>
                     <p className='banner__button__p'>Mas información</p>
-                    <img className='banner__button__img' src="/src/assets/whatsapp-kinder.svg" alt="imagen del logo de whatsapp" />
+                    <img className='banner__button__img' src={iconWhatsapp} alt="imagen del logo de whatsapp" />
                 </button>
             </section>
         </>

@@ -11,6 +11,11 @@ import logoIngredion from './../assets/logoIngredion.jpg';
 import logoBSG from './../assets/logoBSG.jpg';
 import logoCastelMalting from './../assets/logoCastelMalting.jpg';
 import logoDistrines from './../assets/logoDistrines.png';
+import imagenTeoriainfo from './../assets/cardimg.jpg';
+import imagenCatainfo from './../assets/cata.jpg';
+import imagenCocinarinfo from '/src/assets/cocinar.jpg';
+import imagenInstructor from './../assets/logo.circular.jpeg'
+
 
 
 
@@ -29,17 +34,17 @@ function App() {
         }
     };
     const insumos = new seccionesCurso ({
-        imagen: '/src/assets/cardimg.jpg',
+        imagen: imagenTeoriainfo,
         titulo: 'Teoría e Insumos',
         parrafo: 'En estés apartado del curso conocerás la base de la cervecería artesanal y los insumos necesarios para cocinar cerveza',
     });
     const cata = new seccionesCurso ({
-        imagen: '/src/assets/cata.jpg',
+        imagen: imagenCatainfo,
         titulo: 'Cata',
         parrafo: 'El siguiente paso es la cata de cervezas que te ayudara a mejorar tus bases como cervecero',
     });
     const cocinar = new seccionesCurso ({
-        imagen: '/src/assets/cocinar.jpg',
+        imagen: imagenCocinarinfo,
         titulo: 'Cocinar',
         parrafo: 'Por ultimo disfrutaras del proceso de primera mano del arte de cocinar cerveza participando en la elaboración de una cerveza artesanal.',
     });
@@ -62,7 +67,7 @@ function App() {
         }
     }
     const joseDavid = new equipo ({
-        imagen: '/src/assets/logo.circular.jpeg',
+        imagen: imagenInstructor,
         nombre: 'Jose David Velasquez Perez',
         roll: 'Ponente',
         descripcion: 'Especialista en fundamentos técnicos de la elaboración de cerveza de la universidad de alicante.'
