@@ -1,0 +1,95 @@
+@use './global';
+
+.section-tj-Curso {
+    width: 320px;
+    height: 522px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    color: whitesmoke;
+    &__h3 {
+        width: 288px;
+        height: 78px;
+        padding: 0;
+        margin: 0;
+        font-family: global.$font;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    &__ul {
+        width: 288px;
+        height: 149px;
+        margin-top: 1rem;
+        padding: 0 8px;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        gap: 8px;
+    }
+    &__ul li {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__article {
+        width: auto;
+        height: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__p {
+            width: 7.8125rem;
+            height: 1.125rem;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &__div {
+            width: 14.375rem;
+            height: 3rem;
+            border-radius: .9375rem;
+            margin-top: 1rem;
+            background-color: global.$second-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: global.$primary-color;
+            box-shadow: 2px 6px 4px rgb(255, 178, 40, 0.4);
+        }
+        &__div p {
+            width: auto;
+            height: auto;
+            font-size: global.$font-paragraph-large;
+            font-weight: 600;
+        }
+    }
+    &__p--obv {
+        width: 18rem;
+        height: 4.3125rem;
+        margin-top: 1rem;
+        font-size: global.$font-paragraph-small;
+        font-weight: 200;
+        line-height: 1.375rem;
+    }
+}
+span {
+    font-weight: 500;
+}

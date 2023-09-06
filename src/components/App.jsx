@@ -5,6 +5,7 @@ import { TeamInfo } from "./TeamInfo";
 import { Teamp } from "./Teamp";
 import { Aliados } from "./Aliados";
 import { Aliado } from "./Aliado";
+import { TarjetaCurso } from './TarjetaCurso'
 import logoBestmalz from './../assets/logoBestmalz.jpg';
 import logoFermentis from './../assets/logoFermentis.jpg';
 import logoIngredion from './../assets/logoIngredion.jpg';
@@ -113,6 +114,16 @@ function App() {
     
     const aliadosList = [];
     aliadosList.push(distrines, bestmalz, fermentis, ingredion, BSG, castelMalting);
+
+    const cursos = [
+        {
+            proximoCurso: 'DOMINGO, JUNIO 25 DE 2023',
+            ubicacion: 'Calle 20 C · 42 – 43, Bogotá/Colombia.',
+            incluye: 'Almuerzo, Cerveza, Memorias de curso en PDF.',
+            costo: '$350.000 COP',
+            observaciones: 'Aforo limitado, para apartar el cupo es necesario anticipar el 50% del valor del curso.'
+        }
+    ]
     
     return(
         <>
@@ -143,6 +154,13 @@ function App() {
                     ))
                 }
             </Aliados> 
+            <TarjetaCurso
+                proximoCurso={cursos[0].proximoCurso}
+                ubicacion={cursos[0].ubicacion}
+                incluye={cursos[0].incluye}
+                costo={cursos[0].costo}
+                observaciones={cursos[0].observaciones}
+            />
         </>
     )
 }
