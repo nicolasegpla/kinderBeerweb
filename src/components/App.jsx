@@ -6,6 +6,7 @@ import { Teamp } from "./Teamp";
 import { Aliados } from "./Aliados";
 import { Aliado } from "./Aliado";
 import { TarjetaCurso } from './TarjetaCurso'
+import { Footer } from "./Footer";
 import logoBestmalz from './../assets/logoBestmalz.jpg';
 import logoFermentis from './../assets/logoFermentis.jpg';
 import logoIngredion from './../assets/logoIngredion.jpg';
@@ -161,6 +162,7 @@ function App() {
                 costo={cursos[0].costo}
                 observaciones={cursos[0].observaciones}
             />
+            <Footer />
         </>
     )
 }

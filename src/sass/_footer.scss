@@ -1,0 +1,88 @@
+@use './global';
+
+.section--footer {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: global.$second-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    &__h2 {
+        width: 10.1875rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+        font-size: global.$font-large;
+        font-weight: 500;
+        line-height: 2rem;
+    }
+    &__button--contacto {
+        width: 14.375rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border-radius: .9375rem;
+        background-color: global.$primary-color;
+        border: none;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        box-shadow: 2px 6px 4px 0 rgba(3, 0, 0, 0.389);
+        &__p {
+            font-family: global.$font;
+            font-size: global.$font-paragraph-large;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+    }
+    &__article--menu {
+        width: 100%;
+        height: auto;
+        margin-top: 2.25rem;
+        &__ul {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            padding: 0 1rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:1rem;
+        }
+    }
+    &__p--contact {
+        width: 20.5rem;
+        height: 3rem;
+        margin-top: 2.25rem;
+        font-size: global.$font-paragraph-small;
+        font-weight: 400;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__p--correo {
+        width: 20.5rem;
+        height: 3rem;
+        font-size: global.$font-paragraph-small;
+        font-weight: 400;
+    }
+    &__button--inicio {
+        width: 3rem;
+        height: 48px;
+        margin-top: 2.25rem;
+        margin-bottom: 3.75rem;
+        border-radius: 50%;
+        border: none;
+        background-color: global.$primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
