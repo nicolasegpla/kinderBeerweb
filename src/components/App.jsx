@@ -7,6 +7,7 @@ import { Aliados } from "./Aliados";
 import { Aliado } from "./Aliado";
 import { TarjetaCurso } from './TarjetaCurso'
 import { Footer } from "./Footer";
+import { InfoCursoSlide } from "./InfoCursoSlide";
 import logoBestmalz from './../assets/logoBestmalz.jpg';
 import logoFermentis from './../assets/logoFermentis.jpg';
 import logoIngredion from './../assets/logoIngredion.jpg';
@@ -17,11 +18,15 @@ import imagenTeoriainfo from './../assets/cardimg.jpg';
 import imagenCatainfo from './../assets/cata.jpg';
 import imagenCocinarinfo from '/src/assets/cocinar.jpg';
 import imagenInstructor from './../assets/logo.circular.jpeg'
+import { useState } from 'react'
 
 
 
 
 function App() {
+
+
+
     // logica del codigo que nos permite imprimir las cards con la informacion del curso
     class seccionesCurso {
         constructor ({
@@ -125,12 +130,18 @@ function App() {
             observaciones: 'Aforo limitado, para apartar el cupo es necesario anticipar el 50% del valor del curso.'
         }
     ]
+
+    const [nic, setNic] = useState(partesDelCurso[0])
+    console.log(nic);
     
     return(
         <>
             <NavMobile />
             <Banner />
-            <InfoCurso partesDelCurso={partesDelCurso} />
+            {/*<InfoCurso partesDelCurso={partesDelCurso} />*/}
+            <InfoCursoSlide 
+                partesDelCurso={partesDelCurso}
+            />
             <TeamInfo>
                 {
                     allTeam.map((person) => 
