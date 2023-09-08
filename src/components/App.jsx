@@ -123,8 +123,8 @@ function App() {
 
     const cursos = [
         {
-            proximoCurso: 'DOMINGO, JUNIO 25 DE 2023',
-            ubicacion: 'Calle 20 C · 42 – 43, Bogotá/Colombia.',
+            proximoCurso: 'Domingo, junio 25 de 2023',
+            ubicacion: 'Calle 20 c · 42 – 43, Bogotá/Colombia.',
             incluye: 'Almuerzo, Cerveza, Memorias de curso en PDF.',
             costo: '$350.000 COP',
             observaciones: 'Aforo limitado, para apartar el cupo es necesario anticipar el 50% del valor del curso.'
@@ -153,7 +153,7 @@ function App() {
                     )
                 }
             </TeamInfo>
-            <Aliados>
+            {/*<Aliados>
                 {
                     aliadosList.map(aliado => (
                         <Aliado 
@@ -163,7 +163,7 @@ function App() {
                         />
                     ))
                 }
-            </Aliados> 
+            </Aliados> */}
             <TarjetaCurso
                 proximoCurso={cursos[0].proximoCurso}
                 ubicacion={cursos[0].ubicacion}

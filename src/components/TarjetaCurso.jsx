@@ -5,9 +5,9 @@ function TarjetaCurso({ proximoCurso, ubicacion, incluye, costo, observaciones }
             <section className="section-tj-Curso">
                 <h3 className="section-tj-Curso__h3">CURSO DE ELABORACION DE CERVEZA ARTESANAL KINDER BEER</h3>
                 <ul className="section-tj-Curso__ul">
-                    <li>PROXIMO CURSO: {proximoCurso}</li>
-                    <li>UBICACION: {ubicacion}</li>
-                    <li>INCLUYE: {incluye}</li>
+                    <li><span>Proximo Curso:</span> {proximoCurso}</li>
+                    <li><span>Ubicacion:</span> {ubicacion}</li>
+                    <li><span>Incluye:</span> {incluye}</li>
                 </ul>
                 <article className="section-tj-Curso__article">
                     <p className="section-tj-Curso__article__p">Precio:</p>
