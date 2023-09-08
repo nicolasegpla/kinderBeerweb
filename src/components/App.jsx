@@ -131,8 +131,6 @@ function App() {
         }
     ]
 
-    const [nic, setNic] = useState(partesDelCurso[0])
-    console.log(nic);
     
     return(
         <>

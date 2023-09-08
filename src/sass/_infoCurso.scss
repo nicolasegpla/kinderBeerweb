@@ -171,3 +171,33 @@
     }
     
 }
+
+.section--selectores {
+    width: 9.375rem;
+    height: 2.25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    &__one, &__two, &__three {
+        width: 1.5rem;
+        height: .375rem;
+        background-color: whitesmoke;
+        border-radius: .9375rem;
+        border: none;
+        opacity: 30%;
+    }
+    /*&__one {
+        width: 2rem;
+        height: .5rem;
+        background-color: global.$second-color;
+        opacity: 90%;
+    }*/
+}
+
+.info--cards--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
