@@ -20,13 +20,16 @@
         margin-top: 0.5rem;
     }
     &__div {
-        width: auto;
-        height: auto;
+        width: 6rem;
+        height: 2.5rem;
         margin-right: 1rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         gap: 0.5rem;
+        background-color: global.$second-color;
+        border-radius: .9375rem;
+        border: none;
         &__social {
             cursor: pointer;
         }
