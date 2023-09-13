@@ -103,6 +103,7 @@
         border: none;
         background-color: global.$second-color;
         box-shadow: 2px 6px 4px rgb(255, 178, 40, 0.4);
+        color: global.$primary-color;
         @include global.media-up(md) {
             display: none;
         } 
