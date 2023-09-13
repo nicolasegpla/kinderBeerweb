@@ -1,10 +1,18 @@
 @use './global';
-
+.section--curso {
+    width: 100vw;
+    max-width: 41.875rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: auto;
+    margin: 0 auto;
+    background-color: #050505;
+}
 .section-tj-Curso {
     width: 320px;
+    max-width: 41.875rem;
     height: 522px;
     margin: 0 auto;
-    margin-top: 4rem;
     padding: 32px 16px;
     display: flex;
     flex-direction: column;

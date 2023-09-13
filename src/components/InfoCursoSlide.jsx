@@ -1,24 +1,17 @@
-import { useState, useRef } from 'react'
-import { ContainerCardsInfo } from "./ContainerCardsInfo"
+import { useState } from 'react'
 import { CardsItemDos } from "./CardsItemDos"
-import rowLeft from '../assets/chevron-left.svg'
-import rowRight from '../assets/chevron-right.svg'
-function InfoCursoSlide( {partesDelCurso}) {
 
-    const ulSlide = useRef();
-    console.log(ulSlide.current);
+function InfoCursoSlide( {partesDelCurso}) {
 
     const [count, setCount] = useState(0);
 
     function right() {
-        count > 1 ? setCount(0) : setCount(count + 1)
-
-    
+        count > 1 ? setCount(0) : setCount(count + 1);
     }
     function left() {
-        count == 0  ? setCount(2) : setCount(count - 1)
+        count == 0  ? setCount(2) : setCount(count - 1);
     }
-
+        
     return(
         <>
             <section className='section--info--curso'>

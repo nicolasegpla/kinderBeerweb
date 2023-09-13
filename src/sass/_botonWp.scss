@@ -1,0 +1,24 @@
+@use './global';
+
+.button--wp {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    @include global.media-down(md) {
+        display: none;
+    } 
+}
+.button--wp:hover {
+    width: 4rem;
+    height: 4rem;
+    transition: all 0.5s;
+}

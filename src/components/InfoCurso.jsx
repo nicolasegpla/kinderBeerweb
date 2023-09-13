@@ -9,7 +9,7 @@ function InfoCurso({partesDelCurso}) {
     return (
         <>
             <section className='info--curso'>
-                <h2 className='info--curso__h2'>Acerca de nuestro curso</h2>
+                <h2 className='info--curso__h2'>Nuestro curso</h2>
                 <p className='info--curso__p'>En kinder beer aprenderás las bases de la cervecería artesanal y asi convertirte en todo un Home brewer.</p>
                 <ContainerCardsInfo>
                     {partesDelCurso.map(card => (

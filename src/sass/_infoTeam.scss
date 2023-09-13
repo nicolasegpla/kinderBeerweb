@@ -2,12 +2,15 @@
 
 .info--team {
     width: 100vw;
+    max-width: 41.875rem;
     height: auto;
+    margin: 0 auto;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #050505;
     &__h2--title {
         width: 12.8125rem;
         height: auto;
@@ -20,7 +23,7 @@
     &__team--ul {
         width: 20.5rem;
         height: auto;
-        margin-top: 2rem;
+        margin-top: 4rem;
         border-radius: 1.25rem;
         display: flex;
         flex-direction: column;

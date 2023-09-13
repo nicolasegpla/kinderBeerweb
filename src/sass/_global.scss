@@ -7,6 +7,25 @@ $font-medium: 1.5rem;
 $font-paragraph-large: 1rem;
 $font-paragraph-small: .875rem;
 
+$breakpoints: (
+  md: 700px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get(
+        $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+@mixin media-down($breakpoint) {
+    @media screen and (max-width: map-get(
+        $breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
 
 * {
     box-sizing: border-box;

@@ -3,18 +3,32 @@
 .nav {
     width: 100vw;
     height: 5rem;
-    background-color: global.$primary-color;
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include global.media-up(md) {
+        position: absolute;
+    } 
     &__logo {
-        width: 6.625rem;
-        height: 4.375rem;
+        width: 9.125rem;
+        height: 6.25rem;
         margin-left: .5rem;
+        margin-top: 0.5rem;
     }
-    &__menu {
-        width: 3rem;
-        height: 3rem;
+    &__div {
+        width: auto;
+        height: auto;
         margin-right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+        &__social {
+            cursor: pointer;
+        }
     }
 }

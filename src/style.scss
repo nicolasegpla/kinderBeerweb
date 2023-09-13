@@ -7,5 +7,9 @@
 @use '/src/sass/aliados';
 @use '/src/sass/tarjetaCurso';
 @use '/src/sass/footer';
+@use '/src/sass/botonWp';
 
 
+body {
+    position: relative;
+}
