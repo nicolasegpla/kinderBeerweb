@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { NavMobile } from "./NavMobile"
 import { Banner } from "./Banner"
 import { InfoCurso } from "./InfoCurso"
@@ -96,12 +97,34 @@ function App() {
         window.scroll(0, 0);
     }
 
+
+    function useSlide() {
+        const [count, setCount] = useState(0);
+
+        function right() {
+        count > 1 ? setCount(0) : setCount(count + 1);
+        }
+        function left() {
+        count == 0  ? setCount(2) : setCount(count - 1);
+        }
+
+        return{
+            count,
+            right,
+            left,
+        }
+    }
+
+    const { count, right, left } = useSlide();
     return(
         <>
             <NavMobile whatsApp={goToPageWhatsapp} instagramGo={goToInstagram}/>
             <Banner whatsApp={goToPageWhatsapp} />
             {sizeWindow >= 1100 ? <InfoCurso partesDelCurso={partesDelCurso} /> : <InfoCursoSlide 
                 partesDelCurso={partesDelCurso}
+                count={count}
+                right={right}
+                left={left}
             /> }
             <TeamInfo>
                 {
@@ -124,7 +147,7 @@ function App() {
                 observaciones={cursos[0].observaciones}
             />
             <Footer whatsApp={goToPageWhatsapp} windowInitial={windowInitial}/>
-            <BotonWp />
+            <BotonWp whatsApp={goToPageWhatsapp}/>
         </>
     )
 }

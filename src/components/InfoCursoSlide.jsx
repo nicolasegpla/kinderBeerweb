@@ -1,16 +1,9 @@
 import { useState } from 'react'
 import { CardsItemDos } from "./CardsItemDos"
 
-function InfoCursoSlide( {partesDelCurso}) {
+function InfoCursoSlide( {partesDelCurso, count, right, left}) {
 
-    const [count, setCount] = useState(0);
-
-    function right() {
-        count > 1 ? setCount(0) : setCount(count + 1);
-    }
-    function left() {
-        count == 0  ? setCount(2) : setCount(count - 1);
-    }
+    
         
     return(
         <>

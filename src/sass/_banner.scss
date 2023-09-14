@@ -10,6 +10,7 @@
     background-size: cover;
     display: flex;
     @include global.media-up(md) {
+        width: 100vw;
         height: 100vh;
         background-image: url('/src/assets/cervezaBanner.jpg');
         background-size: cover;
@@ -19,6 +20,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-height: none;
     } 
     &__div--info {
         width: 20rem;

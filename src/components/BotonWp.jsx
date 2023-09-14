@@ -1,8 +1,8 @@
 import whatsappImg from '../assets/whatsapp-kinderDesk.svg';
-function BotonWp() {
+function BotonWp({ whatsApp }) {
     return(
         <>
-            <button className="button--wp"><img src={whatsappImg} alt="logo de whatsapp" /></button>
+            <button onClick={whatsApp} className="button--wp"><img src={whatsappImg} alt="logo de whatsapp" /></button>
         </>
     )
 }
