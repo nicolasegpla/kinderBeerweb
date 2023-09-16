@@ -78,7 +78,7 @@ function App() {
     
     const cursos = [
         {
-            proximoCurso: 'Domingo, junio 25 de 2023',
+            proximoCurso: 'Domingo, octubre 01 de 2023',
             ubicacion: 'Calle 20 c · 42 – 43, Bogotá/Colombia.',
             incluye: 'Almuerzo, Cerveza, Memorias de curso en PDF.',
             costo: '$350.000 COP',
